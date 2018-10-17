@@ -1,4 +1,5 @@
-# Project 3:Detecting fraudulent reviews on Amazon reviews through Sentiment Analysis using Supervised Machine Learning.
+# Project 3:
+## Detecting fraudulent reviews in Amazon's customer reviews through Sentiment Analysis using Supervised Machine Learning.
 
 **Objective**
 E-commerce websites such as Amazon use a large number of customer reviews on almost everything that is sold on their website.The main aim of including reviews is to help other customer in making their buying decision. As customer reviews are an important source of information for future consumers and they have the potential to  increase or decrease the reputation of products or websites.As customer reviews have an huge impact on product sales, there is an incentive for fraudulent actors to post false reviews push their reputation unfairly.So the main aim of my project is to detect such false or unfair reviews.
