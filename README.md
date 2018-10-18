@@ -1,21 +1,47 @@
 # Project 3:
-## Detecting fraudulent reviews in Amazon's customer reviews through Sentiment Analysis using Supervised Machine Learning.
+## Analyzing customer behavior to predict customer churn rate for a telecom company
 
 **Objective**
-E-commerce websites such as Amazon use a large number of customer reviews on almost everything that is sold on their website.The main aim of including reviews is to help other customer in making their buying decision. As customer reviews are an important source of information for future consumers and they have the potential to  increase or decrease the reputation of products or websites.As customer reviews have an huge impact on product sales, there is an incentive for fraudulent actors to post false reviews in order to push their reputation unfairly.So the main aim of my project is to detect such false or unfair reviews.
+Customer churn occurs when customers stop doing business with a company.As customers have multiple options in the telecom industry, predicting customer churn rates are useful in this industry.
+Customer churn could be voluntary or involuntary.Voluntary churn occurs due to a decision by the customer to switch to another company, while involuntary churn occurs due to circumstances beyoond the control of the company such as a customer's relocation to a long-term care facility, death, illness etc.I plan to exclude involuntary churn from my analysis.As the cost of retaining an existing customer is far less than acquiring a new one, my model aims to generate a small prioritized list of customers most vulnerable to churn.That way the company can modify their advertising strategy to retain those customers.
 
 **Method**
-I plan to use Amazon Reviews collection dataset ( available on AWS public dataset).I will focus on reviews for a specific product category.I plan to use StringToWordVector filter to analyze the the main text and classify it as either positive, negative or neutral, depending on presence or absence of particular words in the text.I then plan to use supervised classifiers to classify reviews as positive, negative, or neutral. I aim to predict the models output on the test data and then generating a confusion matrix that classifies the reviews into positive,negative or neutral ones.
-I will then use the confuison matrix to find fair and unfair reviews using the following attributes:
+I plan to use the IBM telecom dataset available from [kaggle.com](https://www.kaggle.com/blastchar/telco-customer-churn).The raw data contains 7043 rows (customers) and 21 columns (features). The “Churn” column is my target variable.I plan to include the following features to predict voluntary customner churn rate.
 
-• **True Positive Reviews (TPR)**
+gender (female, male)
 
-• **False Positive Reviews (FPR)**
+SeniorCitizen (Whether the customer is a senior citizen or not (1, 0))
 
-• **True Negative Reviews (TNR)**
+Partner (Whether the customer has a partner or not (Yes, No))
 
-• **False Negative Reviews (FNR)**
+Dependents (Whether the customer has dependents or not (Yes, No))
 
-• **True Neutral Reviews (TNR)**
+tenure (Number of months the customer has stayed with the company)
 
-• **False Neutral Reviews (FNR)**
+PhoneService (Whether the customer has a phone service or not (Yes, No))
+
+MultipleLines (Whether the customer has multiple lines r not (Yes, No, No phone service)
+
+InternetService (Customer’s internet service provider (DSL, Fiber optic, No)
+
+OnlineSecurity (Whether the customer has online security or not (Yes, No, No internet service)
+
+OnlineBackup (Whether the customer has online backup or not (Yes, No, No internet service)
+
+DeviceProtection (Whether the customer has device protection or not (Yes, No, No internet service)
+
+TechSupport (Whether the customer has tech support or not (Yes, No, No internet service)
+
+streamingTV (Whether the customer has streaming TV or not (Yes, No, No internet service)
+
+streamingMovies (Whether the customer has streaming movies or not (Yes, No, No internet service)
+
+Contract (The contract term of the customer (Month-to-month, One year, Two year)
+
+PaperlessBilling (Whether the customer has paperless billing or not (Yes, No))
+
+PaymentMethod (The customer’s payment method (Electronic check, Mailed check, Bank transfer (automatic), Credit card (automatic)))
+
+MonthlyCharges (The amount charged to the customer monthly — numeric)
+
+TotalCharges (The total amount charged to the customer — numeric)
