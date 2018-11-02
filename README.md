@@ -37,17 +37,17 @@ I  made the following cost assumptions to explore the cost implications of imple
 
 It’s clear that false negatives are substantially more costly than false positives. Instead of optimizing for total error,I selected a model that minimized a cost function ( basically minimized the number of false negatives)  that looks like this:
 
-500∗FN(C)+0TN(C) + 100∗FP(C)+100TP(C)
+**500∗FN(C)+0TN(C) + 100∗FP(C)+100TP(C)**
 
 C:Count
 
 
-**Conclusion **
+**Conclusion**
 
 In order to maintain their current customer base, using the current logistic regression model will save the company USD 135,800 in a month.So its worth investing in optimizing the model further to increase cost savings.I used a default threshold of 0.5 for my logistic regression model.if we lower the threshold further, the cost per customer decreases (from $148 to $90).This results in further cost savings.
 
 
-**Future Work **
+**Future Work**
 
 I want to optimize the sensitivity of the model (further decrease the number of false negatives).If I had more time, I would invest more in feature engineering and try and include more important features from other datasets.Fot future work, I also want identify the root causes as to why customers leave as it would help in fine tuning re-acquisition strategies.
 
