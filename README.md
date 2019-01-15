@@ -1,6 +1,4 @@
-# Project 3: Summary
-
-## Using Supervised Machine Learning to Predict Customer Churn
+# Project 3: Using Supervised Machine Learning to Predict Customer Churn
 
 **Objective**
 
@@ -14,7 +12,7 @@ I used the IBM telecom dataset available from [kaggle.com](https://www.kaggle.co
 
 Predict variable (desired target): y — has the customer churned? (binary: “1”, means “Yes”, “0” means “No)
 
-I cleaned the dataset to remove the missing variables and hot encoded several categorical variables. I explored the  correlation between several features and the target variable.I then used a correlation matrix to explore if there was any correlation between differnt features.I included all features to predict the target variable (customer churn).
+I cleaned the dataset to remove the missing variables and hot encoded several categorical variables. I explored the  correlation between several features and the target variable.I then used a correlation matrix to explore if there was any correlation between different features.I included all features to predict the target variable (customer churn).
 
 My target variable was unbalanced.So I balanced the target variable with SMOTE (Synthetic Minority Oversampling Technique). With my training data created, I up-sampled minority sample( in our case the 'yes_churn' (customers who churn) sample using the SMOTE algorithm. 
 
